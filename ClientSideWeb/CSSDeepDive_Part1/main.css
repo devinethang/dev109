@@ -1,0 +1,59 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.QRCodeTile
+{
+    text-align: center;
+    margin: 4px;
+    background-color: antiquewhite;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    max-width: 325px;
+    max-height: fit-content;
+    font-size: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 20px;
+}
+.QRCode
+{
+    margin: 15px;
+    max-width: 288px;
+    max-height: 288px;
+    border-radius: 10px;
+    
+}
+
+.Improve 
+{
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 25px;
+}
+
+.Scan 
+{
+    font-size: 15px;
+    margin: 30px;
+    color: gray;
+}
+body{
+    background-color: rgb(156, 212, 212);
+}
