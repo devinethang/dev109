@@ -21,6 +21,13 @@ p
     font-size:200%;    
 }
 
+.remove-special-font
+{
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
 i 
 {
     color:darkgreen;
