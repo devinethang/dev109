@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
-    <link rel="stylesheet" href="main.css" />
+    <!-- <link rel="stylesheet" href="main.css" /> -->
 </head>
 
 <body>
@@ -14,16 +14,17 @@
         <!-- Class used for h1 styling instead of the h1 element. -->
         <!-- h1 inside a <th> is improper html according to W3 validator -->
         <tr>
-            <th colspan="3" class="h1">
-                HTML Table Example
-            </th>
+            <td colspan="3" align="center">
+                <h1>
+                    HTML Table Example
+                </h1>
+            </td>
         </tr>
-
         <tr>
             <td><img src="PieLogo.png" alt="Cartoon picture of a pie" width="200">
             </td>
             <td>
-                <h2>
+                <h2 align="center" vlign="middle">
                     Meal Planner
                 </h2>
             </td>
@@ -34,9 +35,9 @@
             </td>
         </tr>
 
-        <tr class="bold center">
-            <td>Week starting</td>
-            <td>2/15/2018</td>
+        <tr>
+            <td align="center"><b>Week starting</b></td>
+            <td align="center"><b>2/15/2018</b></td>
 
             <th>
                 Instructions
@@ -45,9 +46,9 @@
         </tr>
 
         <tr>
-            <td class="bold">Day of the Week</td>
-            <td class="bold">Recipe Name</td>
-            <td rowspan="8">Add the name of the recipe under the column Recipe Name</td>
+            <td><b>Day of the Week</b></td>
+            <td><b>Recipe Name</b></td>
+            <td rowspan="8" valign="middle">Add the name of the recipe under the column Recipe Name</td>
         </tr>
         <tr>
             <td>Monday</td>
