@@ -6,8 +6,8 @@
 body {
     width: 90%;
     margin: 0 auto;
-    background-image: url('PieLogo.png');
-    background-size: 26vh;}
+    background-image: url('background.png');
+    background-size: cover;}
 
 #content {
     overflow: auto;}
@@ -61,4 +61,5 @@ li {
 #logo {
     font-family: 'GidolinyaRegular';
     font-weight: normal;
-    font-style: normal;}
+    font-style: normal;
+    color: #5bde60;}
