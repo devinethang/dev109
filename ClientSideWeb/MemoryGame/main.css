@@ -1,0 +1,98 @@
+body {
+   background-color: wheat;
+   display: flex;
+   justify-content: center;
+}
+
+.game-board {
+   padding: 20px;
+   text-align: center;
+   float: left;
+   position: relative;
+   top: 100px;
+   left: 50px;
+   background-color: whitesmoke;
+
+}
+
+.game-tiles-4 {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.game-tiles-5 {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+}
+
+.game-tiles-6 {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+}
+
+.game-tile {
+   width: 50px;
+   height: 50px;
+   align-content: center;
+   align-items: center;
+}
+
+.game-tile-hidden {
+   background-color: blue;
+}
+
+.game-tile-revealed {
+   background-color: red;
+}
+
+.game-tile-matched {
+   background-color: green;
+}
+
+.div-col {
+   display: flex;
+   flex-direction: column;
+}
+
+.div-row {
+   display: flex;
+   flex-direction: row;
+}
+
+.div-gap {
+   gap: 10px;
+}
+
+.div-space-between {
+   justify-content:space-evenly;
+}
+
+.no-win {
+   display: none;
+}
+
+.win {
+   background-color: green;
+   color: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   max-width: 200px;
+}
+
+.no-instructions {
+   display: none;
+}
+
+.instructions {
+   background-color: lightblue;
+   color: black;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.div-center {
+   justify-content: center;
+   align-items: center;
+}

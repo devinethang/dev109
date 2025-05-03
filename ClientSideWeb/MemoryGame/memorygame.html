@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryGame</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+    <div class="game-board div-col div-gap">
+        <h1>Memory Game</h1>
+        <div class="div-row div-gap div-center">
+            <select id="difficulty" name="difficulty">
+
+                <!-- <option value="noValue">-- Difficulty --</option> -->
+                <option value="easy">Easy (4x4)</option>
+                <option value="medium">Medium (5x5)</option>
+                <option value="hard">Hard (6x6)</option>
+            </select>
+            <button id="start-button" onclick="newGame()">New Game</button>
+        </div>
+        <div class="div-row div-space-between">
+            <div class="div-row">
+                <label>Moves: </label>
+                <label id="moves">0</label>
+            </div>
+            <div class="div-row">
+                <label>Time: </label>
+                <label id="timer">00:00</label>
+            </div>
+        </div>
+        <div id="gameBoard" class="game-tiles-4 div-gap"></div>
+
+        <div id="scoreBoard"></div>
+        <div class="div-center div-row">
+            <div id="gameOver" class="no-win div-center">Game over. You win! You finished in <label
+                    id="lblTime">00:00</label> with
+                <label id="lblMoves">0</label> moves
+            </div>
+        </div>
+
+        <div id="intro" class="instructions">
+            <h2>Instructions</h2>
+            <p>Click on the tiles to reveal them. Try to find matching pairs!</p>
+            <p>Match all pairs to win the game.</p>
+            <p>Good luck!</p>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
