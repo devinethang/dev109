@@ -1,0 +1,65 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    text-align: center;}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url('background.png');
+    background-size: cover;}
+
+#content {
+    overflow: auto;}
+
+#nav, #feature, #footer {
+    margin: 1%;}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;}
+
+.column3 {
+    margin-right: 0%;}
+
+li {
+    display: inline;
+    padding: 0.5em;}
+
+#nav, #footer {
+    background-color: #efefef;
+    padding: 0.5em 0;}
+
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;}
+
+#nav {
+    background-color: #ef8c8c;}
+
+#feature {
+    background-color: #8cef8c;
+    background-image: url('PieLogo.png');
+    background-position:right;
+    background-size:20vh;
+    background-repeat:no-repeat;}
+
+.column1 {
+    background-color: #8c8cef;}
+
+.column2 {
+    background-color: #ef8cef;}
+
+.column3 {
+    background-color: #efef8c;}
+
+#footer {
+    background-color: #8cefef;}
+
+#logo {
+    font-family: 'GidolinyaRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: #5bde60;}
