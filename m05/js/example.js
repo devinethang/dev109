@@ -4,11 +4,11 @@ var msg = '<h2>Multiplication Table</h2>';              // Add Table Header
 
 
     // Get input from user
-    let table = prompt('Enter a number from 1 to 10:');
+    let table = prompt('Enter a number from 0 to 10:');
     // Check if the input is a number
     // If the user enters a number outside the range, reprompt with error message
-    while (table < 1 || table > 10) {
-        table = prompt('Error: Please enter a number from 1 to 10:');
+    while (table < 0 || table > 10) {
+        table = prompt('Error: Please enter a number from 0 to 10:');
     }
 
     // If the user enters a non-numeric value, set table to 0
