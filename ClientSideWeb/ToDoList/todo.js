@@ -121,7 +121,7 @@ todoForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const title = todoInput.value.trim();
     const description = todoDesc.value.trim();
-    if (!title || !description) return;
+    if (!title) return;
     const token = getCookie('authToken');
     try {
         const res = await fetch(`${API_URL}/todos`, {

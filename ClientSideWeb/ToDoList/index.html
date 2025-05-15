@@ -29,7 +29,7 @@
             <button id="logout-btn">Logout</button>
             <form id="todo-form">
                 <input type="text" id="todo-input" placeholder="Add a new task" required>
-                <input type="text" id="todo-desc" placeholder="Description" required>
+                <textarea id="todo-desc" placeholder="Description"></textarea>
                 <button type="submit">Add</button>
             </form>
             <ul id="todo-list"></ul>
@@ -40,7 +40,7 @@
         <form id="edit-todo-form">
             <h2>Edit Todo</h2>
             <input type="text" id="edit-title" required>
-            <input type="text" id="edit-desc" required>
+            <textarea id="edit-desc" required></textarea>
             <label><input type="checkbox" id="edit-completed"> Completed</label>
             <button type="submit">Save</button>
             <button type="button" id="edit-cancel">Cancel</button>
