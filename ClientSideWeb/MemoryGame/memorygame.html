@@ -21,11 +21,16 @@
                 <option value="hard">Hard (6x6)</option>
             </select>
             <button id="start-button" onclick="newGame()">New Game</button>
+            <button id="instructions-button" onclick="showInstructions()">Instructions</button>
         </div>
         <div class="div-row div-space-between">
             <div class="div-row">
                 <label>Moves: </label>
                 <label id="moves">0</label>
+            </div>
+            <div class="div-row">
+                <label>Total Moves: </label>
+                <label id="labelTotalMoves">0</label>
             </div>
             <div class="div-row">
                 <label>Time: </label>

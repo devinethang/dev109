@@ -12,6 +12,7 @@ body {
    top: 100px;
    left: 50px;
    background-color: whitesmoke;
+   min-width: 300px;
 
 }
 
