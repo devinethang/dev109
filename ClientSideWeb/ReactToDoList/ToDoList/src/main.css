@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color:#333
+}
+div {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px 30px 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="text"], input[type="password"] {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1em;
+}
+button {
+    padding: 8px 12px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background: #1565c0;
+}
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+#todo-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.todo-title {
+    font-weight: bold;
+    margin-right: 8px;
+}
+.todo-title.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.todo-desc {
+    color: #666;
+    font-size: 0.95em;
+    margin-right: auto;
+    word-break: break-word;
+    white-space: pre-wrap;
+    max-width: 220px;
+    overflow-wrap: anywhere;
+}
+#todo-desc {
+    min-height: 40px;
+    resize: vertical;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    width: 100%;
+    font-size: 1em;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+.edit-btn, .delete-btn {
+    background: #eee;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin-left: 2px;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+.edit-btn:hover {
+    background: #ffd600;
+}
+.delete-btn:hover {
+    background: #e53935;
+    color: #fff;
+}
+#edit-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+#edit-modal form {
+    background: #fff;
+    padding: 24px 20px 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    min-width: 260px;
+    gap: 12px;
+}
+#edit-modal h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #1976d2;
+}
+#edit-modal input[type="text"] {
+    width: 100%;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+#edit-desc {
+    min-height: 60px;
+    resize: vertical;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    width: 100%;
+    font-size: 1em;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+}
+#edit-cancel {
+    background: #eee;
+    color: #333;
+}
+#edit-cancel:hover {
+    background: #e53935;
+    color: #fff;
+}
+#user-section {
+    margin-top: 20px;
+}
+#welcome-user {
+    font-weight: bold;
+    color: #1976d2;
+    margin-right: 10px;
+}
