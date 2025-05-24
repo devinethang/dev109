@@ -5,8 +5,10 @@ import LoginForm from './LoginForm';
 function AuthSection() {
     return (
         <>
+        <div>
             <RegistrationForm />
             <LoginForm />
+        </div>
         </>
     );
 }
