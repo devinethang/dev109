@@ -12,11 +12,11 @@ function App() {
 
   return (
     <>
-      <Header></Header> 
-        <AuthSection></AuthSection>
-        <UserSection></UserSection>
-        <EditModal></EditModal>
-      
+      <Header></Header>
+      <AuthSection></AuthSection>
+      <UserSection></UserSection>
+      <EditModal></EditModal>
+
     </>
   )
 }
