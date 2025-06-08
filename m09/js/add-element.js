@@ -10,6 +10,7 @@ function addElement() {
     // Send error if the input is empty.
     let error = null;
     try {
+        // Check if the input field is empty.
         if (newText.textContent.trim() === '') {
             error = "The entry was empty";
             throw new Error('Input cannot be empty');
@@ -24,9 +25,11 @@ function addElement() {
         position.appendChild(newEl);
     }
 
+    // Catch any errors that occur during the process.
     catch (e) {
         console.log(e);
     }
+    // Finally, log the error if it exists.
     finally {
         if (error) {
             console.log(error);
