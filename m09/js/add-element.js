@@ -28,8 +28,6 @@ function addElement() {
         console.log(e);
     }
     finally {
-        // I did E.C.
-        // you did E.C.
         if (error) {
             console.log(error);
         }
