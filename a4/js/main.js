@@ -4,23 +4,32 @@ function validateForm() {
     //1) create a variable to control status of each field. Assume that they are not valid
     let isValid = {
         firstName: false,
+        lastName: false,
         email: false,
         message: false
     };
 
-
+debugger
     //3) do the validation
     try {
         //2) create variables to read the values from html text inputs
-        let name = document.getElementById("name").value;
+        let firstName = document.getElementById("firstname").value;
+        let lastName = document.getElementById("lastname").value;
         let email = document.getElementById("email").value;
         let message = document.getElementById("message").value;
 
-        // Check if name is not empty
-        if (firstname==="null" || firstname==="" || firstname.length > 20) {
+        // FirstName validation
+        if (!firstName || firstName.trim() === "" || firstname.length > 20) {
             throw new Error("Name cannot be empty");
         } else {
-            isValid.name = true;
+            isValid.firstName = true;
+        }
+
+        // LastName validation
+        if (lastName === "null" || lastName === "" || lastName.length > 20) {
+            throw new Error("Last name cannot be empty");
+        } else {
+            isValid.lastName = true;
         }
 
         // Check if email is valid
@@ -47,9 +56,14 @@ function validateForm() {
     catch (error) {
         // Display error messages in the console
         console.error(error.message);
-
-        if (!isValid.name) {
+        
+        if (!isValid.firstName) {
             nameError.innerHTML = "The firstname is required, must be alphabetical, and cannot be greater than 20 characters.";
+            return false;
+        }
+
+        if (!isValid.lastName) {
+            lastNameError.innerHTML = "The lastname is required, must be alphabetical, and cannot be greater than 20 characters.";
             return false;
         }
 
@@ -63,8 +77,8 @@ function validateForm() {
             return false;
         }
 
-    }
+        
 
-    //5) return the status of each field
+    }
 
 }
