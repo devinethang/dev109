@@ -3,6 +3,7 @@
 // var colorOdd = "black";
 // var symbol ="*";
 
+// Function to create a Rhombus shape with specified height, colors, and symbol
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     let upLine = "";
     for (let i = 0; i < pHeight; i++) {
@@ -19,6 +20,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     document.getElementById("downLeftRight").innerHTML = downLine;
 }
 
+// Function to create spaces for the left side of the Rhombus
 function createSpace(pHeight, i) {
     let rLine = "";
 
@@ -30,6 +32,7 @@ function createSpace(pHeight, i) {
     return rLine;
 }
 
+// Functions to create each part of the Rhombus
 function upRight(rLine, i, pHeight, pColorEven, pColorOdd, pSymbol) {
     //var rLine = "";
     //Create each line on the Rhombus
@@ -50,6 +53,7 @@ function upRight(rLine, i, pHeight, pColorEven, pColorOdd, pSymbol) {
     return rLine;
 }
 
+// Function to create the left side of the Rhombus
 function upLeft(rLine, i, pHeight, pColorEven, pColorOdd, pSymbol) {
     //var rLine = "";
 
@@ -72,6 +76,7 @@ function upLeft(rLine, i, pHeight, pColorEven, pColorOdd, pSymbol) {
     return rLine;
 }
 
+// Function to create the left side of the Rhombus
 function downLeft(rLine, i, pHeight, pColorEven, pColorOdd, pSymbol) {
 
     rLine += "<p>";
@@ -95,6 +100,7 @@ function downLeft(rLine, i, pHeight, pColorEven, pColorOdd, pSymbol) {
     return rLine;
 }
 
+// Function to create the right side of the Rhombus
 function downRight(rLine, i, pHeight, pColorEven, pColorOdd, pSymbol) {
 
     //rLine += "<p>";

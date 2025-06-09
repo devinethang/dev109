@@ -13,9 +13,13 @@
 </head>
 
 <body>
+
+    <!-- Rhombus Size -->
     <label>What is the size of Rhombus?</label><br>
     <input type="text" id="rHeight" value="5" size="5">
     <br>
+
+    <!-- Color Even -->
     <label>Choose color for Even position</label><br>
     <select id="colorEven">
         <option value="#0000FF">Blue</option>
@@ -23,6 +27,7 @@
         <option value="#FF9900">Orange</option>
     </select><br>
 
+    <!-- Color Odd -->
     <label>Choose color for Odd position</label><br>
     <select id="colorOdd">
         <option value="#FF0099">Pink</option>
@@ -30,6 +35,8 @@
         <option value="#660099">Purple</option>
     </select>
     <br>
+
+    <!-- Symbol -->
     <label>Choose symbol for Rhombus</label>
     <select id="symbol">
         <option value="*">*</option>
@@ -37,6 +44,8 @@
         <option value="@">@</option>
     </select>
     <br>
+
+    <!-- Button to create Rhombus -->
     <button onclick="createRhombus(document.getElementById('rHeight').value,
         document.getElementById('colorEven').value,
         document.getElementById('colorOdd').value,
@@ -44,7 +53,7 @@
     <div id="upLeftRight">Rhombus</div>
     <div id="downLeftRight"></div>
 
-    <script src="rhombus.js"></script>
+    <script src="./js/rhombus.js"></script>
 
 </body>
 
