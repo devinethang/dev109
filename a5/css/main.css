@@ -1,0 +1,26 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.carousel-control-prev {
+    left: 10px;
+    position: absolute;
+}
+
+.carousel-control-next {
+    right: 10px;
+    position: absolute;
+}
