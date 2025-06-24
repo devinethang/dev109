@@ -16,7 +16,6 @@ function validateForm() {
         zipcode: false
     };
 
-debugger
     //3) do the validation
     try {
         //2) create variables to read the values from html text inputs
