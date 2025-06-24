@@ -67,8 +67,8 @@ debugger
         }
 
         // Username validation (required, max 12 chars, alphanumeric)
-        if (username.length > 12) {
-            throw new Error("Username cannot be more than 12 characters.");
+        if (username.length < 3 || username.length > 12) {
+            throw new Error("Username must have a min of three characters and be more than 12 characters.");
         } else {
             isValid.username = true;
         }
@@ -167,7 +167,7 @@ debugger
         }
 
         if (!isValid.username) {
-            usernameError.innerHTML = "Username is required, max of 12.";
+            usernameError.innerHTML = "Username is required, min of 3 and a max of 12 chars.";
             return false;
         }
         else {
