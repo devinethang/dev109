@@ -74,7 +74,7 @@ debugger
         }
 
         // Password validation (required, max 7 chars, 1 upper, 1 lower, 1 number, 1 special char)
-        let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{,7}$/;
+        let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{1,7}$/;
         if (!password || !passwordPattern.test(password)) {
             throw new Error("Password is required has a max 7 characters, include 1 uppercase, 1 lowercase, 1 number, and 1 special character.");
         } else {
