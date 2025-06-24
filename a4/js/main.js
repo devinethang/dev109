@@ -138,49 +138,89 @@ debugger
             nameError.innerHTML = "The firstname is required, must be alphabetical, and cannot be greater than 20 characters.";
             return false;
         }
+        else {
+            nameError.innerHTML = "";
+        }
 
         if (!isValid.lastName) {
             lastNameError.innerHTML = "The lastname is required, must be alphabetical, and cannot be greater than 20 characters.";
             return false;
+        }
+        else {
+            lastNameError.innerHTML = "";
         }
 
         if (!isValid.email) {
             emailError.innerHTML = "Email is required and must be valid.";
             return false;
         }
+        else {
+            emailError.innerHTML = "";
+        }
 
         if (!isValid.phone) {
             phoneError.innerHTML = "Phone is required and must be no greater than 15 digits.";
             return false;
         }
+        else {
+            phoneError.innerHTML = "";
+        }
+
         if (!isValid.username) {
             usernameError.innerHTML = "Username is required, max of 12.";
             return false;
         }
+        else {
+            usernameError.innerHTML = "";
+        }
+
         if (!isValid.password) {
             passwordError.innerHTML = "Password is required and has a max of 7 chars and must at least contain 1 upper, 1 lower, 1 number, and 1 special char.";
             return false;
         }
+        else {
+            passwordError.innerHTML = "";
+        }
+
         if (!isValid.address) {
             addressError.innerHTML = "Address is required.";
             return false;
         }
+        else {
+            addressError.innerHTML = "";
+        }
+        
         if (!isValid.city) {
             cityError.innerHTML = "City is required.";
             return false;
         }
+        else {
+            cityError.innerHTML = "";
+        }
+
         if (!isValid.state) {
             stateError.innerHTML = "State is required.";
             return false;
         }
+        else {
+            stateError.innerHTML = "";
+        }
+
         if (!isValid.country) {
             countryError.innerHTML = "Country is required.";
             return false;
         }
+        else {
+            countryError.innerHTML = "";
+        }
+
         if (!isValid.zipcode) {
-            zipcodeError.innerHTML = "Zipcode is required and must be 5 digits.";
+            zipcodeError.innerHTML = "Zipcode is required for residents of the US and must be 5 digits.";
             return false;
-        }        
+        }   
+        else {
+            zipcodeError.innerHTML = "";
+        }     
 
     }
 
