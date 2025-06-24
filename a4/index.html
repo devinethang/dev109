@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>a4 - Form Validation</title>
+    <title>A4 - Form Validation</title>
     <link rel="stylesheet" href="./css/main.css">
     <!--<script src="gen_validatorv4.js" type="text/javascript"></script>-->
     <script src="js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div>
-        <form class="validate-form" action="./js/js_form_validation/art4/ty.html" onsubmit="return validateForm();">
+
+    <div class="validate-form">
+        <h1>Form Validation Example</h1>
+        <form action="./js/js_form_validation/art4/ty.html" onsubmit="return validateForm();">
             <label for="firstname">First Name</label>
             <br>
             <input type="text" id="firstname" name="firstname">
@@ -24,7 +26,7 @@
             <br>
             <input type="text" id="lastname" name="lastname">
             <br>
-            <div class="errorMessages" id="lastnameError"></div>
+            <div class="errorMessages" id="lastNameError"></div>
             <br><br>
 
             <label for="email">Email:</label>

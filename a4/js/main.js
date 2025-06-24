@@ -149,11 +149,6 @@ debugger
             return false;
         }
 
-        if (!isValid.message) {
-            messageError.innerHTML = "Message is required.";
-            return false;
-        }
-
         if (!isValid.phone) {
             phoneError.innerHTML = "Phone is required and must be no greater than 15 digits.";
             return false;
