@@ -1,26 +1,28 @@
 .carousel {
-    position: relative;
+    text-align: center;
     width: 100%;
     overflow: hidden;
 }
 
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
 .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 100%;
     box-sizing: border-box;
-
 }
 
 .carousel-control-prev {
+    margin-top: 10px;
     left: 10px;
-    position: absolute;
 }
 
 .carousel-control-next {
+    margin-top: 10px;
     right: 10px;
-    position: absolute;
+}
+
+.images {
+    height: 400px;
+    object-fit: cover;
 }
