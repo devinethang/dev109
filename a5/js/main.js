@@ -1,6 +1,7 @@
 let currentIndex = 0;
 
 let currentimage = document.getElementById("carousel-image");
+let caption = document.getElementById("caption");
 
 let images = [
     "./images/image1.jpg",
@@ -18,14 +19,34 @@ let altTexts = [
     "A dock leading out to a lake with mountains in the background"
 ];
 
+let timer = setInterval(nextImage, 4000);
+
+function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(nextImage, 4000);
+}
+
 function nextImage() {
     currentIndex = (currentIndex + 1) % images.length;
+
+    // Update the image, alt text, and caption
     currentimage.src = images[currentIndex];
     currentimage.alt = altTexts[currentIndex];
+    caption.textContent = altTexts[currentIndex];
+
+    // Reset the timer after changing the image
+    resetTimer();
 }
 
 function previousImage() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
+
+    // Update the image, alt text, and caption
     currentimage.src = images[currentIndex];
     currentimage.alt = altTexts[currentIndex];
+    caption.textContent = altTexts[currentIndex];
+
+    // Reset the timer after changing the image
+    resetTimer();
 }
+
